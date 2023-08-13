@@ -1,0 +1,55 @@
+## OSI Model-> Theoretical Model
+
+**Application Layer**
+This is the application part . The layer that user interacts with . Implemented in software.
+
+**Presentation Layer**
+This layer handles encryption, encoding, translation, etc of the data received by the application layer
+
+**Session Layer**
+Setting up and managing the connections. Enables processing of data as well as termination these sessions . Takes care of authorization and authentication.
+
+**Transport Layer**
+The data received from session layer is divided into segments which have a sequence number attached to them
+This sequence number is then used later on the receiver end to align the data back in proper sequence
+Controls the amount of data being transported.
+Adds checksum . Takes care of integrity and sequence of data.
+This layer has `Flow Control` which manages the upload speed of the sending device according to the receiving device so we do not lose any data packet during the data sending process.
+UDP and TCP
+
+**Network Layer**
+Router comes into play
+Provides logical addressing (sender's and receiver's address) - IP addressing applied for packets transmission
+Routing Protocols
+Load Balancing
+
+**Data Link Layer**
+This takes data packet from network layer and does logical address and physical addressing.
+Physical Addressing - MAC Address
+*`Frame`* -> data unit that has MAC Address to it added by the data link layer
+DL Layer adds MAC Address to frames or data segments received from network layer.
+
+
+**Physical Layer**
+Send the data to the physical router via wires 
+Transmits bits via cables and wires
+
+
+***Real World Example****
+ME => A => P => S => T => N => D => P => Router => P => D => N => T => S => P => A => MY FRIEND.
+
+
+# TCP IP MODEL -> Practical Model
+## or Internet Protocol Suite
+
+## Layers of TCP/IP
+- Application Layer
+- Transport Layer
+- Network Layer
+- Data Link Layer
+- Physical  Layer
+### Pointers
+- The working of the layers is same as OSI Model but with few exceptions.
+- OSI model's Application, Presentation, Session are merged together into Application.
+- This is used practically and OSI is used for theory and concepts.
+
